@@ -1,5 +1,5 @@
 # Use the official PHP image
-FROM php:8.0-apache
+FROM php:7.4-apache
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev zip unzip
@@ -28,5 +28,3 @@ EXPOSE 80
 
 # Start Apache
 CMD ["apache2-foreground"]
-
-#rename
