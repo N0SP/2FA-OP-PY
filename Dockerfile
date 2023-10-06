@@ -1,5 +1,5 @@
 # Use the official PHP image
-FROM php:7.4-apache
+FROM php:8.2.11-apache
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev zip unzip
