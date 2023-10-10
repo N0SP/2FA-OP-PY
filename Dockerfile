@@ -12,7 +12,7 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
 RUN a2enmod rewrite
 
 # Set the working directory
-WORKDIR /var/www/html
+WORKDIR 2FA-OP-PY
 
 # Copy Laravel files to the container
 COPY . .
